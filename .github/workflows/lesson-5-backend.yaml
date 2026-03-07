@@ -11,8 +11,8 @@ jobs:
       run:
         working-directory: backend
     steps:
-     - uses: actions/checkout@v4
-     - name: Run PyCharm security
+      - uses: actions/checkout@v4
+      - name: Run PyCharm security
         uses: tonybaloney/pycharm-security@1.25.1
   build_and_test:
     needs: [security_test]
